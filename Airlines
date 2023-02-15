@@ -1,0 +1,19 @@
+class Codechef
+{
+    public static int Spider(int x1,int y1, int z1){
+        if(x1*10>=y1) return y1*z1;
+        else return x1*10*z1;
+    }
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		
+		Scanner s = new Scanner(System.in);
+		int t=s.nextInt();
+		while(t-->0){
+		    int x1=s.nextInt();
+		    int y1=s.nextInt();
+		    int z1=s.nextInt();
+		    System.out.println(Spider(x1,y1,z1));
+		}
+	}
+}
